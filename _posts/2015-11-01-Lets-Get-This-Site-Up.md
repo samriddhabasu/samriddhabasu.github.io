@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Let's Get This Site Up, Shall We?"
+title: "Let&#39;s Get This Site Up, Shall We?"
 date: 2015-11-01
 author: The Dork Knight Rises
 ---
