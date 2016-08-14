@@ -1,0 +1,78 @@
+---
+layout: default
+title: Blog | The Dork Knight Rises
+---
+<style>
+	.mdl-card {
+		flex-grow: 1;
+	}
+	@media screen and (min-width: 960px) {
+		.mdl-card {
+			min-width: 320px;
+		}
+	}
+	@media screen and (min-width: 1080px) {
+		.mdl-card {
+			min-width: 420px;
+		}
+	}
+	section {
+		position:relative;
+		padding: 0 0 0 0;
+		width: 100%;
+		flex-grow: 1;
+	}
+</style>
+
+<script type="text/javascript">
+	document.getElementById('blogButton').style.borderBottom='solid';
+</script>
+
+<section class="mdl-grid">
+	{% for post in paginator.posts %}
+	<div class="mdl-card mdl-cell mdl-shadow--4dp">
+		<div class="mdl-card__supporting-text" style="position: absolute; top:16px; padding-bottom: 0px; margin-bottom: 0px;">
+			<p style="margin-right: 32px;">{{ post.title }}</p>
+			<p1>{{ post.date | date_to_string }}</p1>
+		</div>
+		<div class="mdl-card__actions mdl-card--border" style="height: 50px; position: absolute; bottom:0;">
+			<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{{ post.url }}">
+				<b>Read</b>
+			</a>
+		</div>
+		<div class="mdl-card__menu" style="position: absolute; z-index: 2; right:16px;">
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="share{{  post.title }}">
+				<i class="material-icons">share</i>
+			</button>
+		</div>
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="share{{  post.title }}">
+		<a name='fb_share' type='link' href='http://www.facebook.com/sharer.php?url={{ site.url }}{{ post.url }}' rel='nofollow'><li class="mdl-menu__item">Facebook<script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script></li></a>
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ post.url }}"><li class="mdl-menu__item">Twitter</li></a>
+		<a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><li class="mdl-menu__item">Google+</li></a>
+	</ul>
+	</div>
+	{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination mdl-cell mdl-shadow--4dp" style="background-color: #fff; left: 0; width: 100%; text-align: center;">
+		<div style="display: inline; width: 48px;">
+		<a href="{{ paginator.previous_page_path }}" class="previous">
+		{% if paginator.previous_page %}
+		<button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="float: left; height:64px;">Newer</button>
+		{% else %}
+		<button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="width: 48px; float: left; height:64px;" disabled>Newer</button>
+		{% endif %}
+		</a>
+		</div>
+		<button class="mdl-button page_number" style="height:64px;" disabled>{{ paginator.page }} of {{ paginator.total_pages }}</button>
+		<div style="display: inline; width: 48px;">
+		<a href="{{ paginator.next_page_path }}" class="next">
+		{% if paginator.next_page %}
+		<button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="float: right; height:64px;">Older</button>
+		{% else %}
+		<button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="float: right; height:64px;" disabled>Older</button>
+		{% endif %}
+		</a>
+		</div>
+</div>
+</section>
