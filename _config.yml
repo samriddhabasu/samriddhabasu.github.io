@@ -8,3 +8,4 @@ url: https://samriddhabasu.github.io
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jemoji
