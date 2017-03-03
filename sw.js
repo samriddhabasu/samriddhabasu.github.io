@@ -5,6 +5,9 @@ self.addEventListener('install', e => {
         '/',
         '/index.html',
         '/index.html?launcher=true',
+        '/blog/index.html',
+        '/projects/index.html',
+        '/about/index.html',
         '/css/main.css',
       ])
       .then(() => self.skipWaiting());
