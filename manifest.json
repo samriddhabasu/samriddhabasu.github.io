@@ -1,0 +1,15 @@
+{
+  "short_name": "Samriddha Basu",
+  "name": "Samriddha Basu (The Dork Knight Rises)",
+  "display": "standalone",
+  "icons": [
+   {
+      "src": "browseralt.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "background_color": "#00695C",
+  "theme_color": "#00695C"
+}
