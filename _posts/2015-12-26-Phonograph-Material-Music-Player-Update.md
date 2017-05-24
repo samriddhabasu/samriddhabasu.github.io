@@ -7,4 +7,5 @@ author: The Dork Knight Rises
 
 Made this video showing off the new Now Playing screen and animations in the latest Beta release of Phonograph Music Player cuz I was bored and not sleepy (even though it's past 4 AM) :P﻿
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Rheb3wQEjNU" target="_blank"><img src="http://img.youtube.com/vi/Rheb3wQEjNU/hqdefault.jpg" style="height: auto; width: 256px; margin: 16px auto;" border="2"/></a>
+
+[![Click to watch on YouTube](https://img.youtube.com/vi/Rheb3wQEjNU/hqdefault.jpg)](https://www.youtube.com/watch?v=Rheb3wQEjNU)
