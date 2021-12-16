@@ -6,7 +6,7 @@ margin: 0 auto;
 height: 100%;
 font-family: 'Roboto', Verdana, Arial, sans-serif; 
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
 body {
 margin-top: 32px;
 width: 75%;
