@@ -2,7 +2,7 @@
 layout: post
 title: "Happy New Year (and Updates)!"
 date: 2016-01-17
-author: The Dork Knight Rises
+author: Samriddha Basu
 ---
 
 Happy New Year to everybody! Hope you are enjoying 2016 and continue to do so throughout the year.

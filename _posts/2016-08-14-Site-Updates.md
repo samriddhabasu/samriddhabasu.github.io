@@ -2,7 +2,7 @@
 layout: post
 title: "Site Updates"
 date: 2016-08-14
-author: The Dork Knight Rises
+author: Samriddha Basu
 ---
 
 It's been a long time since I've last had time to update the site or post something new, but over the last couple days I have got some work done.

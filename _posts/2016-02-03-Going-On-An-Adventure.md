@@ -2,7 +2,7 @@
 layout: post
 title: "I&#39;m Going On An Adventure!"
 date: 2016-02-03
-author: The Dork Knight Rises
+author: Samriddha Basu
 ---
 
 ><div style="font-size: 0.8em; line-height: 1.1em; color: #808080"><br>Then something Tookish woke up inside him, and he wished to go and see the great mountains, and hear the pine-trees and the waterfalls, and explore the caves, and wear a sword instead of a walking-stick</div>

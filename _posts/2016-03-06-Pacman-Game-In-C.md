@@ -2,7 +2,7 @@
 layout: post
 title: "Pacman Game in C"
 date: 2016-03-06
-author: The Dork Knight Rises
+author: Samriddha Basu
 ---
 
 So this semester we have a course, Structured Programming Approach (SPA). 
