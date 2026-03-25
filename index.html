@@ -54,21 +54,25 @@
         padding: 48px;
       }
     }
+    .top-gap {
+      height: 56px;
+      position: relative;
+    }
     .theme-toggle {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      background: var(--card-bg);
+      position: absolute;
+      top: 8px;
+      right: 0;
+      background: transparent;
       border: none;
       border-radius: 50%;
       width: 48px;
       height: 48px;
       cursor: pointer;
-      box-shadow: 0 2px 4px var(--shadow);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: background-color 0.3s;
+      z-index: 10;
     }
     .theme-toggle:hover {
       background: var(--border-color);
@@ -79,17 +83,17 @@
     .profile-card {
       background: var(--card-bg);
       border-radius: 8px;
-      padding: 24px;
+      padding: 4px 16px 16px;
       text-align: center;
       box-shadow: 0 2px 4px var(--shadow);
       margin-bottom: 24px;
       transition: background-color 0.3s;
     }
     .profile-img {
-      width: 128px;
-      height: 128px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-top: -32px;
+      margin-top: -70px;
       box-shadow: 0 4px 8px var(--shadow);
     }
     h1 {
@@ -195,9 +199,11 @@
   </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-    <span class="material-icons" id="theme-icon">dark_mode</span>
-  </button>
+  <div class="top-gap">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span class="material-icons" id="theme-icon">dark_mode</span>
+    </button>
+  </div>
 
   <div class="profile-card">
     <img src="resources/profile.jpeg" alt="Samriddha Basu" class="profile-img">
