@@ -1,13 +1,85 @@
----
-layout: default
-title: Page not found :(
-permalink: /404.html
----
-<section class="mdl-grid" style="flex-grow: 1;">
-	<div class="mdl-card mdl-shadow--4dp blurb" style="padding: 16px 16px 16px 16px; flex-grow: 1;">
-		<div class="mdl-card__title"><p>Nothing here</p></div>
-		<div class="mdl-card__supporting-text">
-			<p>Oops, looks like we're lost.<br>Let's go back to the <a href="/">home page</a></p>
-		</div>
-	</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Samriddha Basu</title>
+  <meta name="description" content="Page not found">
+  <meta name="theme-color" content="#00695C">
+  <link rel="icon" type="image/png" href="/browseralt.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@14.0.0/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    :root {
+      --bg-color: #eee;
+      --card-bg: white;
+      --text-color: #333;
+      --text-secondary: #666;
+      --accent-color: #00695C;
+      --border-color: #ddd;
+      --shadow: rgba(0,0,0,0.1);
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #e0e0e0;
+      --text-secondary: #aaa;
+      --accent-color: #4db6ac;
+      --border-color: #333;
+      --shadow: rgba(255,255,255,0.1);
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Roboto', Verdana, Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 32px;
+      box-shadow: 0 2px 4px var(--shadow);
+      transition: background-color 0.3s;
+    }
+    h1 {
+      font-size: 4em;
+      margin: 0 0 16px;
+      color: var(--accent-color);
+    }
+    p {
+      font-size: 1.2em;
+      color: var(--text-secondary);
+      margin: 0 0 24px;
+    }
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>404</h1>
+    <p>Oops, looks like we're lost.</p>
+    <a href="/">Go back to home page</a>
+  </div>
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

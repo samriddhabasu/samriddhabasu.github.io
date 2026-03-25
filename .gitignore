@@ -1,3 +1,4 @@
 _site/
 .sass-cache/
 cacert.pem
+.DS_Store

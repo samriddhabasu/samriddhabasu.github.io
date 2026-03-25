@@ -1,15 +1,16 @@
 {
-  "short_name": "Samriddha Basu",
+  "short_name": "Samriddha",
   "name": "Samriddha Basu",
+  "description": "Personal website of Samriddha Basu",
   "display": "standalone",
   "icons": [
-   {
+    {
       "src": "browseralt.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true",
+  "start_url": "/",
   "background_color": "#00695C",
   "theme_color": "#00695C"
 }
