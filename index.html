@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    if (!localStorage.getItem('theme')) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samriddha Basu</title>
@@ -132,7 +137,7 @@
       opacity: 0;
       animation: fadeIn 0.6s ease-out forwards;
     }
-    
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -143,7 +148,7 @@
         transform: translateY(0);
       }
     }
-    
+
     .card:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 16px var(--shadow);
